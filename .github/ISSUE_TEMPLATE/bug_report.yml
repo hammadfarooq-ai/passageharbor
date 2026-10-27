@@ -1,0 +1,27 @@
+name: Bug report
+description: Report a reproducible application or documentation problem.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Use synthetic data. Do not include API keys, .env, private PDFs, or database files. Report vulnerabilities privately through SECURITY.md."
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Minimal reproduction
+      description: Include the command or UI steps and whether this concerns a new upload, legacy index, or generation.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and safe error summary
+      description: OS, Python version, relevant dependency versions, and a redacted error summary.
+    validations:
+      required: true

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+  <title id="title">A guide to the PDF Knowledge Assistant interface</title>
+  <desc id="desc">An illustrative interface with PDF upload and document selection in the sidebar, a question and answer in the main area, and two numbered passages with PDF page numbers. All content is synthetic, not a screenshot or live response.</desc>
+  <defs><clipPath id="frame"><rect x="1" y="1" width="1198" height="658" rx="20"/></clipPath></defs>
+  <rect x="1" y="1" width="1198" height="658" rx="20" fill="#fafbf8" stroke="#dce3d9" stroke-width="2"/>
+  <g clip-path="url(#frame)" font-family="Segoe UI, Arial, sans-serif">
+    <rect x="1" y="1" width="1198" height="49" fill="#e7ece5"/>
+    <circle cx="25" cy="25" r="5" fill="#9aad9b"/><circle cx="43" cy="25" r="5" fill="#b7c4b5"/><circle cx="61" cy="25" r="5" fill="#ced7c9"/>
+    <text x="91" y="30" font-size="13" fill="#49604c">PassageHarbor · PDF Knowledge Assistant</text>
+    <rect x="1023" y="14" width="150" height="23" rx="11" fill="#f5f7f1"/>
+    <text x="1098" y="30" text-anchor="middle" font-size="11" fill="#5d705c">ILLUSTRATIVE INTERFACE</text>
+    <rect x="1" y="50" width="270" height="609" fill="#f0f3ed"/>
+    <path d="M271 50v610" stroke="#dce3d9"/>
+    <text x="27" y="96" font-size="22" font-weight="700" fill="#263f2e">Your documents</text>
+    <text x="27" y="132" font-size="13" fill="#647661">1 / UPLOAD AND PROCESS</text>
+    <rect x="26" y="151" width="219" height="94" rx="12" fill="#fafbf8" stroke="#b9c7b4" stroke-dasharray="5 4"/>
+    <text x="136" y="187" font-size="15" text-anchor="middle" fill="#41543f">Upload a text PDF</text>
+    <text x="136" y="212" font-size="12" text-anchor="middle" fill="#798574">25 MB default · no OCR</text>
+    <rect x="26" y="261" width="219" height="41" rx="8" fill="#4d7058"/>
+    <text x="136" y="287" font-size="14" font-weight="600" text-anchor="middle" fill="#fff">Process document</text>
+    <text x="27" y="342" font-size="13" fill="#647661">2 / SELECT A DOCUMENT</text>
+    <rect x="26" y="359" width="219" height="43" rx="8" fill="#fff" stroke="#dce3d9"/>
+    <text x="38" y="386" font-size="13" fill="#344b36">example-handbook.pdf</text>
+    <path d="m223 377 5 5 5-5" fill="none" stroke="#647661" stroke-width="2"/>
+    <circle cx="33" cy="425" r="4" fill="#698c65"/>
+    <text x="46" y="430" font-size="12" fill="#647661">Ready · indexed locally</text>
+    <rect x="26" y="465" width="219" height="42" rx="8" fill="#fafbf8" stroke="#dce3d9"/>
+    <text x="41" y="491" font-size="14" fill="#41543f">›  Search settings</text>
+    <rect x="26" y="520" width="219" height="42" rx="8" fill="#fafbf8" stroke="#dce3d9"/>
+    <text x="136" y="546" font-size="14" text-anchor="middle" fill="#41543f">Clear conversation</text>
+    <text x="27" y="599" font-size="12" fill="#71816b">Local search.</text>
+    <text x="27" y="618" font-size="12" fill="#71816b">Selected context goes to Groq.</text>
+    <text x="311" y="101" font-size="31" font-weight="700" letter-spacing="-1" fill="#263f2e">PDF Knowledge Assistant</text>
+    <text x="312" y="131" font-size="15" fill="#798574">Ask a question. Follow the evidence.</text>
+    <rect x="309" y="158" width="847" height="59" rx="12" fill="#eef2eb"/>
+    <text x="330" y="183" font-size="12" font-weight="600" fill="#71816b">YOU</text>
+    <text x="330" y="204" font-size="16" fill="#344b36">How should the team prepare for a review?</text>
+    <rect x="309" y="233" width="847" height="113" rx="12" fill="#fff" stroke="#dce3d9"/>
+    <text x="330" y="261" font-size="12" font-weight="600" fill="#71816b">ASSISTANT</text>
+    <text x="330" y="291" font-size="17" fill="#344b36">The handbook recommends defining the scope, assigning an owner,</text>
+    <text x="330" y="318" font-size="17" fill="#344b36">and collecting supporting notes before the review. [1] [2]</text>
+    <rect x="309" y="363" width="847" height="204" rx="12" fill="#f7faf3" stroke="#d3dfcb"/>
+    <text x="330" y="394" font-size="15" font-weight="700" fill="#344b36">3 / INSPECT SOURCE PASSAGES</text>
+    <text x="330" y="427" font-size="13" font-weight="600" fill="#50704b">[1] example-handbook.pdf · PDF page 2</text>
+    <text x="330" y="452" font-size="15" fill="#5c6d56">Begin each review by defining its scope and assigning an owner.</text>
+    <path d="M330 470h804" stroke="#dce3d9"/>
+    <text x="330" y="498" font-size="13" font-weight="600" fill="#50704b">[2] example-handbook.pdf · PDF page 3</text>
+    <text x="330" y="523" font-size="15" fill="#5c6d56">Collect the supporting notes before the review meeting.</text>
+    <text x="330" y="548" font-size="11" fill="#85917b">PDF page numbers may differ from printed page numbers. Inspect the evidence.</text>
+    <rect x="309" y="590" width="847" height="43" rx="21" fill="#edf1e8"/>
+    <text x="332" y="617" font-size="14" fill="#85917b">Ask about your PDF…</text>
+    <path d="m1120 603 15 9-15 9 4-9z" fill="#7d9174"/>
+  </g>
+</svg>

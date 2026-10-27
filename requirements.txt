@@ -1,0 +1,7 @@
+streamlit>=1.48,<2
+chromadb>=1.5.5,<2
+sentence-transformers>=5,<7
+pypdf>=5.7,<7
+groq>=0.31,<2
+python-dotenv>=1.1,<2
+filelock>=3.16,<4

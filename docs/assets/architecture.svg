@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690" role="img" aria-labelledby="title desc">
+  <title id="title">PassageHarbor architecture and data boundary</title>
+  <desc id="desc">PDF extraction, chunking, embeddings, vector storage, retrieval, reranking, and citation checks run locally. Selected passages and bounded conversation are sent to Groq, which returns response deltas. Package and model downloads require a separate first-use connection.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="m0 0 8 4-8 4z" fill="#708b73"/></marker>
+    <marker id="cloudarrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="m0 0 8 4-8 4z" fill="#c28d59"/></marker>
+  </defs>
+  <rect width="1200" height="690" rx="20" fill="#fafbf7"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="42" y="55" font-size="29" font-weight="700" letter-spacing="-.7" fill="#263f2e">A small local core. One generation boundary.</text>
+    <text x="43" y="86" font-size="15" fill="#71816b">One Streamlit process · four application modules · an embedded vector database</text>
+    <rect x="36" y="116" width="800" height="501" rx="18" fill="#edf4e9" stroke="#9fb397" stroke-dasharray="7 5"/>
+    <rect x="866" y="116" width="298" height="501" rx="18" fill="#fbf0e2" stroke="#d7af7d" stroke-dasharray="7 5"/>
+    <text x="61" y="150" font-size="13" font-weight="700" letter-spacing="2" fill="#4e724b">YOUR COMPUTER</text>
+    <text x="891" y="150" font-size="13" font-weight="700" letter-spacing="2" fill="#94653b">GROQ API</text>
+    <g fill="#fff" stroke="#cfdbca">
+      <rect x="61" y="181" width="221" height="108" rx="12"/>
+      <rect x="321" y="181" width="221" height="108" rx="12"/>
+      <rect x="581" y="181" width="221" height="108" rx="12"/>
+      <rect x="581" y="329" width="221" height="105" rx="12"/>
+      <rect x="321" y="329" width="221" height="105" rx="12"/>
+      <rect x="61" y="329" width="221" height="105" rx="12"/>
+      <rect x="321" y="485" width="481" height="103" rx="12"/>
+    </g>
+    <g fill="#263f2e" font-size="18" font-weight="600">
+      <text x="80" y="213">PDF bytes</text><text x="340" y="213">Pages and spans</text><text x="600" y="213">Local MiniLM</text>
+      <text x="600" y="361">Chroma + manifests</text><text x="340" y="361">Scoped retrieval</text><text x="80" y="361">User question</text>
+      <text x="340" y="518">Streamed draft → label checks → answer</text>
+    </g>
+    <g fill="#74836b" font-size="13">
+      <text x="80" y="241">Validate · SHA-256 identity</text><text x="80" y="263">Safe generated storage paths</text>
+      <text x="340" y="241">pypdf extraction · raw pages</text><text x="340" y="263">200-token target · 40 overlap</text>
+      <text x="600" y="241">Cached local embeddings</text><text x="600" y="263">Normalized index and query</text>
+      <text x="600" y="389">Stable IDs · ready-state check</text><text x="600" y="411">Legacy collection preserved</text>
+      <text x="340" y="389">Optional rerank · deduplicate</text><text x="340" y="411">Numbered source passages</text>
+      <text x="80" y="389">Exactly one selected document</text><text x="80" y="411">Separate session conversation</text>
+      <text x="340" y="547">Keep sources with each answer. Invalid or missing labels trigger a warning.</text>
+      <text x="340" y="570">A valid mapping does not prove that every statement is supported.</text>
+    </g>
+    <g stroke="#708b73" stroke-width="2" fill="none" marker-end="url(#arrow)">
+      <path d="M282 234h37"/><path d="M542 234h37"/><path d="M691 289v38"/>
+      <path d="M581 381h-37"/><path d="M282 381h37"/>
+    </g>
+    <rect x="891" y="230" width="248" height="195" rx="14" fill="#fffcf5" stroke="#e1c6a0"/>
+    <text x="913" y="266" font-size="20" font-weight="700" fill="#845a35">Configured chat model</text>
+    <g fill="#a17d55" font-size="14">
+      <text x="913" y="300">Answer from supplied passages</text>
+      <text x="913" y="326">Use actual citation labels</text>
+      <text x="913" y="352">Ignore document instructions</text>
+      <text x="913" y="390">Also used for follow-up rewrites</text>
+    </g>
+    <path d="M431 434v26h423v-142h35" fill="none" stroke="#c28d59" stroke-width="2" marker-end="url(#cloudarrow)"/>
+    <text x="612" y="452" font-size="11" fill="#a17d55">Question + excerpts + short history</text>
+    <path d="M1015 425v111H804" fill="none" stroke="#c28d59" stroke-width="2" marker-end="url(#cloudarrow)"/>
+    <text x="907" y="521" font-size="12" fill="#a17d55">Response deltas</text>
+    <text x="43" y="654" font-size="13" fill="#7f8a75">Generation requires internet access. First-use model/package downloads are separate from local PDF processing.</text>
+  </g>
+</svg>

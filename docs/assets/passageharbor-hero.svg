@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">PassageHarbor</title>
+  <desc id="desc">A forest-green identity banner with document pages, local vector nodes, and an answer card with numbered source labels. From PDF pages to grounded answers.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#102b27"/><stop offset="1" stop-color="#1f493c"/></linearGradient>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#fffef9"/><stop offset="1" stop-color="#e8eee7"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#bed6c5" stroke-opacity=".07"/></pattern>
+  </defs>
+  <rect width="1200" height="420" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="420" rx="24" fill="url(#grid)"/>
+  <circle cx="1110" cy="50" r="260" fill="#9fbc9c" opacity=".05"/>
+  <circle cx="1100" cy="50" r="200" fill="none" stroke="#bad0b9" opacity=".1"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <g transform="translate(56 42)">
+      <rect width="40" height="40" rx="11" fill="#d5e5cd"/>
+      <path d="M11 10h11l7 7v13H11z" fill="none" stroke="#214b3a" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M22 10v8h7M15 23h10M15 27h7" fill="none" stroke="#214b3a" stroke-width="2"/>
+    </g>
+    <text x="112" y="68" font-size="13" letter-spacing="3" font-weight="600" fill="#bed3c0">PDF KNOWLEDGE ASSISTANT</text>
+    <text x="56" y="171" font-size="74" font-weight="700" letter-spacing="-3" fill="#f6f6ed">PassageHarbor</text>
+    <text x="60" y="220" font-size="27" fill="#d2e0ce">From PDF pages to grounded answers.</text>
+    <text x="60" y="264" font-size="17" fill="#a9c3b4">A focused workspace for questions, context, and evidence.</text>
+    <g transform="translate(60 321)" font-size="13" font-weight="600">
+      <rect width="138" height="34" rx="17" fill="#345b49"/>
+      <text x="69" y="22" fill="#e4eddb" text-anchor="middle">LOCAL RETRIEVAL</text>
+      <rect x="150" width="154" height="34" rx="17" fill="#345b49"/>
+      <text x="227" y="22" fill="#e4eddb" text-anchor="middle">STREAMED ANSWERS</text>
+      <rect x="316" width="162" height="34" rx="17" fill="#d5ac75"/>
+      <text x="397" y="22" fill="#253e30" text-anchor="middle">INSPECTABLE SOURCES</text>
+    </g>
+    <g fill="none" stroke="#aac6aa" stroke-width="2" opacity=".55">
+      <path d="M739 250Q761 185 813 174M741 250Q780 275 852 286M813 174Q870 180 886 246"/>
+      <circle cx="740" cy="250" r="9" fill="#83a986"/><circle cx="785" cy="204" r="5"/><circle cx="797" cy="266" r="5"/>
+    </g>
+    <g transform="translate(800 62) rotate(-9 75 100)">
+      <rect x="12" y="12" width="145" height="191" rx="13" fill="#08231c" opacity=".35"/>
+      <rect width="145" height="191" rx="13" fill="url(#paper)"/>
+      <rect x="18" y="22" width="43" height="24" rx="6" fill="#e4d1b4"/>
+      <text x="39" y="39" font-size="12" font-weight="700" text-anchor="middle" fill="#705b3d">PDF</text>
+      <path d="M20 68h99M20 81h87M20 94h99M20 107h64M20 138h99M20 151h84M20 164h65" fill="none" stroke="#a5b5a6" stroke-width="5" stroke-linecap="round"/>
+      <path d="M18 118h106" stroke="#d8b77d" stroke-width="9" opacity=".7"/>
+    </g>
+    <g transform="translate(884 221)">
+      <rect x="8" y="10" width="252" height="145" rx="17" fill="#08231c" opacity=".35"/>
+      <rect width="252" height="145" rx="17" fill="#fcfcf5"/>
+      <circle cx="26" cy="27" r="9" fill="#d9e6d7"/>
+      <path d="m22 27 3 3 5-6" fill="none" stroke="#4f7959" stroke-width="2"/>
+      <text x="45" y="32" font-size="14" font-weight="700" fill="#284d38">Trace the answer.</text>
+      <path d="M21 55h205M21 68h188M21 81h148" stroke="#d1dbce" stroke-width="5" stroke-linecap="round"/>
+      <rect x="20" y="100" width="92" height="27" rx="7" fill="#ecf2e8"/>
+      <text x="66" y="118" font-size="12" text-anchor="middle" fill="#416348">[1] PDF p. 8</text>
+      <rect x="123" y="100" width="108" height="27" rx="7" fill="#ecf2e8"/>
+      <text x="177" y="118" font-size="12" text-anchor="middle" fill="#416348">[2] PDF p. 12</text>
+    </g>
+  </g>
+</svg>
