@@ -135,28 +135,20 @@ PDF page numbers are **one-based PDF pages**, which can differ from the printed 
 ## How it works
 
 ```mermaid
-flowchart LR
-    subgraph LOCAL[Your computer]
-        P[PDF upload] --> V[Validate and hash bytes]
-        V --> E[Extract pages with pypdf]
-        E --> C[Clean and chunk by tokens]
-        C --> M[Cached MiniLM embeddings]
-        M --> DB[(Local Chroma)]
-        Q[Question + selected document] --> R[Scoped vector search]
-        DB --> R
-        R --> K[Optional reranker and deduplication]
-        K --> S[Numbered source passages]
-        A[Streamed draft] --> CL[Citation label checks]
-        CL --> UI[Answer + expandable sources]
-    end
-    subgraph CLOUD[Groq API]
-        G[Configurable chat model]
-    end
+flowchart TD
+    P[PDF upload] --> I[Validate, extract, clean and chunk locally]
+    I --> M[Cached MiniLM embeddings]
+    M --> DB[(Local Chroma)]
+    Q[Question + selected document] --> R[Scoped search + optional reranking]
+    DB --> R
+    R --> S[Numbered source passages]
     S -->|Question, excerpts, short history| G
+    G[Groq API: configurable chat model]
     G -->|Response deltas| A
+    A[Stream draft, check labels, show sources]
     classDef local fill:#edf5f0,stroke:#4f7962,color:#172b22;
     classDef cloud fill:#fff0e8,stroke:#d87842,color:#56321d;
-    class P,V,E,C,M,DB,Q,R,K,S,A,CL,UI local;
+    class P,I,M,DB,Q,R,S,A local;
     class G cloud;
 ```
 
